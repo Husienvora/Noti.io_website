@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import styles from "./HomePage.module.css";
+import styles from "./HomePage.css";
 
 const Home = () => {
   const handleGoToDocs = () => {
@@ -23,8 +23,8 @@ const Home = () => {
       <Head>
         <title>Noti.io - Home</title>
       </Head>
-      <div className={styles.container}>
-        <div className={styles.header}>
+      <div className="container">
+        <div className="header">
           <a
             onClick={() => {
               Github();
@@ -40,12 +40,12 @@ const Home = () => {
             <FaLinkedin size={24} />
           </a>
         </div>
-        <h1 className={styles.title}>Welcome to Noti.io</h1>
-        <p className={styles.description}>
+        <h1 className="title">Welcome to Noti.io</h1>
+        <p className="description">
           A npm package for setting up your Server to Client notifications
           easily.
         </p>
-        <button className={styles.button} onClick={handleGoToDocs}>
+        <button className="button" onClick={handleGoToDocs}>
           Go to Docs
         </button>
         {/* Notification Skeletons */}

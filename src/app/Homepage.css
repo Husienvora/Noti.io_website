@@ -1,15 +1,16 @@
 /* HomePage.module.css */
 
 .container {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  max-width: 100vw !important;
   background-color: #1d232a;
   color: #fff;
   overflow: hidden; /* Ensure the notification skeletons are clipped to the container */
+  text-align: center; /* Center the content inside the container */
 }
 
 .header {
@@ -28,12 +29,13 @@
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
+  text-align: center; /* Center the title horizontally */
 }
 
 .description {
   font-size: 18px;
   max-width: 600px;
-  text-align: center;
+  text-align: center; /* Center the description horizontally */
   margin-bottom: 30px;
 }
 
