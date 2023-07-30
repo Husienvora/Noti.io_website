@@ -2,8 +2,7 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import styles from "./HomePage.css";
-
+import "./Homepage.css";
 const Home = () => {
   const handleGoToDocs = () => {
     // Redirect to the documentation page
