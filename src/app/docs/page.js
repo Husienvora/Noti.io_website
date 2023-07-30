@@ -152,11 +152,11 @@ export default App;
             </pre>
             <div className="divider"></div>
             <p>
-              In this code, the <code>"http://localhost:5000/"</code> is the
-              server URL where the notifications will be sent from. Replace it
-              with your actual server URL. The second parameter{" "}
-              <code>document.querySelector(".App")</code> selects the DOM
-              element (parent component) where the notification UI will be
+              In this code, the <code>&quot;http://localhost:5000/&quot;</code>
+              is the server URL where the notifications will be sent from.
+              Replace it with your actual server URL. The second parameter
+              <code>document.querySelector(&quot;.App&quot;)</code> selects the
+              DOM element (parent component) where the notification UI will be
               injected. Ensure that it is a valid parent component for the
               notifications. The third parameter contains custom styles for the
               notification UI.
