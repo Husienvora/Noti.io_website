@@ -1,0 +1,105 @@
+/* styles/Docs.module.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1d232a;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #1d232a;
+  color: #fff;
+  padding: 20px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-link {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+.section-link:hover {
+  background-color: #282e36;
+}
+
+.section-link.active {
+  background-color: #282e36;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #282e36;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.section.visible {
+  display: block;
+}
+
+.code-section {
+  background-color: #1d232a;
+  color: #fff;
+  padding: 10px;
+  font-family: monospace;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.code-line {
+  line-height: 1.4;
+}
+
+.code-line::after {
+  content: "|";
+  animation: blink-caret 0.75s infinite;
+}
+
+@keyframes blink-caret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.output-section {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.output-section img {
+  width: 100%;
+  max-width: 500px; /* Adjust the maximum width of the output image as needed */
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.demo-section {
+  display: flex;
+  margin-top: 20px;
+}

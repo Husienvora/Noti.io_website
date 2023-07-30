@@ -1,0 +1,82 @@
+/* HomePage.module.css */
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #1d232a;
+  color: #fff;
+  overflow: hidden; /* Ensure the notification skeletons are clipped to the container */
+}
+
+.header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.header a {
+  color: #fff;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 18px;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+/* Notification Skeletons */
+.notification-skeleton {
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  background-color: #808080;
+  border-radius: 20px;
+  opacity: 0.7;
+  animation: notificationAnimation 2s ease-in-out infinite;
+  left: 0; /* Default initial position, will be updated by JavaScript */
+  top: 0; /* Default initial position, will be updated by JavaScript */
+}
+
+.animate {
+  animation-delay: 0s, 0.25s, 0.5s, 0.75s; /* Add delay to each skeleton for a staggered effect */
+}
+
+@keyframes notificationAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-40px);
+    opacity: 0.2;
+  }
+}
