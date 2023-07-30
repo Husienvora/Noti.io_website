@@ -76,14 +76,14 @@ export default function Docs() {
           >
             <h2>Installation</h2>
             <p>
-              To install the <strong>@noti/noti.io</strong> package and set up
+              To install the <strong>@husien/noti.io</strong> package and set up
               notifications for your webpage easily, follow these steps:
             </p>
             <div className="divider"></div>
             <h3>Client Installation</h3>
 
             <div className="code-section">
-              <div className="code-line">npm i @noti/noti.io-client</div>
+              <div className="code-line">npm i @husien/noti.io_client</div>
             </div>
             <p>
               Install the client package to receive notifications on your
@@ -93,7 +93,7 @@ export default function Docs() {
             <h3>Server Installation</h3>
 
             <div className="code-section">
-              <div className="code-line">npm i @noti/noti.io</div>
+              <div className="code-line">npm i @husien/noti.io</div>
             </div>
 
             <p>
@@ -107,12 +107,12 @@ export default function Docs() {
             <h2>Client</h2>
             <p>
               To set up notifications on your webpage using the{" "}
-              <code>@noti/noti.io-client</code> package, follow these steps:
+              <code>@husien/noti.io_client</code> package, follow these steps:
             </p>
             <div className="divider"></div>
             <h3>Step 1: Install the Client Package</h3>
             <div className="code-section">
-              <div className="code-line">npm i @noti/noti.io-client</div>
+              <div className="code-line">npm i @husien/noti.io_client</div>
             </div>
             <p>
               Install the client package to receive notifications on your
@@ -125,7 +125,7 @@ export default function Docs() {
             <pre className="code-section">
               <code>
                 {`
-import { Noti_client } from "noti.io-client";
+import { Noti_client } from "@husien/noti.io_client";
 import { useEffect } from "react";
 
 function App() {
@@ -179,12 +179,12 @@ export default App;
             </p>
             <div className="divider"></div>
             <div className="code-section">
-              <div className="code-line">npm i @noti/noti.io</div>
+              <div className="code-line">npm i @husien/noti.io</div>
             </div>
             <div className="divider"></div>
             <pre className="code-section">
               <code>{`
-import { Noti } from "noti.io";
+import { Noti } from "@husien/noti.io";
 
 const Notific = new Noti(server, {
   cors: {
@@ -214,7 +214,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import http from "http";
-import { Noti } from "noti.io";
+import { Noti } from "@husien/noti.io";
 
 dotenv.config();
 const app = express();
